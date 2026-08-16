@@ -74,38 +74,3 @@ Yido 是一款面向个人用户的本地任务管理应用，聚焦于“单人
 5. 实现设置与备份导入导出
 6. 添加本地通知与交互反馈
 
-## Git 初始化建议
-
-最合适的 Git 起点是当前项目根目录，也就是：
-
-```bash
-cd /d d:\ds_test
-git init
-git branch -M main
-```
-
-这样做的好处是：
-
-- 整个项目文档、代码和后续结构都在同一仓库下
-- 便于后续按功能模块提交
-- 避免把 PRD、src 目录和历史脚本分散到不同仓库
-
-建议在第一次提交前添加一个 .gitignore 文件，避免将开发缓存、构建产物和临时文件一并提交。
-
-## 推荐提交顺序
-
-```bash
-git add .
-git commit -m "feat: initialize Yido project and PRD"
-```
-
-如果需要连接远程仓库，再执行：
-
-```bash
-git remote add origin <你的仓库地址>
-git push -u origin main
-```
-
-## 备注
-
-这是一个本地优先的个人应用项目，后续可优先建立清晰的功能模块和数据层，再逐步实现前端界面和桌面应用封装。
